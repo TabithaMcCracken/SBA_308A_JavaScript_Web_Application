@@ -23,7 +23,7 @@
 
     <!-- Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    
+
     <script type="text/javascript" src="Carousel.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </head>
@@ -60,12 +60,31 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <!-- Get Started Button -->
+      <br>
+
+        <!-- Get Started Button -->
       <div class="d-flex">
-        <button id="getFavouritesBtn" class="btn btn-success mx-auto mb-5">
-          Get Favorites
+        <button id="getStartedBtn" class="btn btn-success mx-auto mb-5">
+          Get Started
         </button>
       </div>
+
+      <!-- Carousel Item Template -->
+    <template id="carouselItemTemplate">
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper">
+              <img
+                src="https://via.placeholder.com/600/92c952"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        </template>
+    
+
     </main>
   </body>
 </html>
