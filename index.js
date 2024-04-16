@@ -4,7 +4,7 @@ import axios from "axios";
 const API_KEY =
   "live_dfpYSW8x3YjkDraGLFAQHcYU0b9w892Tu80OLSjrAPFFSnxD6J5oINMo3AfLjI3A";
 
-axios.defaults.baseURL = "https://api.thecatapi.com/v1/";
+axios.defaults.baseURL = "https://api.thedogapi.com/v1/";
 axios.defaults.headers.common["x-api-key"] = API_KEY;
 
 document.addEventListener("DOMContentLoaded", function() {
