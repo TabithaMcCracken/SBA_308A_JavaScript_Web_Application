@@ -9,6 +9,13 @@ body {
     height: 100vh;
     flex-direction: column;
 }
+body:after{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+}
 
 h1 {
     text-align: center;
@@ -33,4 +40,30 @@ h1 {
 #content p {
     margin: 0;
     padding: 0;
+}
+
+.dog-image-wrapper {
+    max-width: 400px; /* Set maximum width to prevent image overflow */
+    max-height: 400px; /* Set maximum height to maintain aspect ratio */
+    display: block;
+    margin: auto; 
+    /* overflow: hidden; */
+  }
+   .dog-image-wrapper{
+    width: 100%;
+    height: auto;
+   }
+
+   /* Add the following CSS to your stylesheet */
+.card {
+    height: 400px; /* Set a fixed height for the card */
+
+    border: 1px solid #ced4da; /* Add a border for visual separation */
+}
+
+.card-img-top {
+    width: 100%; /* Set the width of the image to fill the card */
+    height: auto; /* Set the height of the image relative to the card */
+    max-height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire space */
 }
